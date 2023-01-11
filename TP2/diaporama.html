@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='diaporama.css'>
+  <script src="diaporama.js" defer></script>
+  <title>Diaporama</title>
+</head>
+
+<body>
+  <head> 
+  <div class = navigateur> 
+  <nav>
+      <ul>
+          <li><a href="page1-formulaire.html">FORMULAIRE</a></li>
+          <li><a href="diaporama.html">DIAPORAMA</a></li>
+      </ul>
+  </nav>
+</div>
+  <div class="conteneur-flexible colonne">
+    <div class="element-flexible"> 
+        <div id="score">
+          <h1 id="sco">Score :</h1>
+          
+        </div>
+        <div id="bravo"></div>
+        <div id="perdu"></div>
+      
+        <input type="button" id="dem" value="Démarrer" />
+        <div id="timer"></div><br>
+      </head>
+      <main>
+        <article>
+          <div class="carrousel">           
+                <img id="carImg" alt="" src="img/0.jpg"/>
+                <button id="prev" class="arrow circle"><b>&#8249;</b>  </button>
+                <button id="next" class="arrow circle"> <b>&#8250;</b> </button>
+          </div>
+        </article>
+        <article>
+          <div>
+            <h2 id="capitale">Capitale : </h2>
+            <form action="#" id="form" name="form">
+              <input id="txtCapitale" name="capitale" placeholder="Capitale"></input>
+              <input type="submit" id="ok" value="OK">
+            </form>
+            
+         
+          </div>
+        </article>        
+      </main>
+    </div>    
+  </div>  
+</body>
+</html>

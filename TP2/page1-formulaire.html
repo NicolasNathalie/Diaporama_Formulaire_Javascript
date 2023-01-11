@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='formulaire.css'>
+    <script src="formulaire.js" defer></script>
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <main>
+        <div class = navigateur> 
+            <nav>
+                <ul>
+                    <li><a href="page1-formulaire.html">FORMULAIRE</a></li>
+                    <li><a href="diaporama.html">DIAPORAMA</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="formulaire">
+            <h1>Veuillez remplir le formulaire</h1>
+            <fieldset>
+                <legend><h2>Livraison</h2></legend>
+                <form action="#" id="inscription" name="inscription">
+                    <div class="champ">
+                        <label for="prenom">Prénom : </label>
+                        <input type="text" name="prenom" id="prenom">
+                        <span class="error" id="errorFirst"></span><br>
+                    </div>
+                    <div class="champ">
+                        <label for="nom">Nom :</label>
+                        <input type="text" name="nom" id="nom">
+                        <span class="error" id="errorName"></span><br>
+                    </div>
+                    <div class="champ">
+                        <label for="adresse">Adresse :</label>
+                        <input type="text" name="adresse" id="adresse">
+                        <span class="error" id="errorAdress"></span><br>
+                    </div>
+                    <div class="champ">
+                        <label for="code">Code postal :</label>
+                        <input type="text" name="code" id="code">
+                        <span class="error" id="errorCode"></span><br>
+                    </div>
+                    <div class="champ">
+                        <label for="ville">Ville :</label>
+                        <input type="text" name="ville" id="ville">
+                        <span class="error" id="errorStreet"></span><br>
+                    </div>
+                    <div class="champ">
+                        <label for="pays">Pays :</label>
+                        <select id="pays" name="pays">
+                            <option value="canada">Canada</option>
+                            <option value="etats">États-Unis</option>
+                        </select>
+                        <span class="error" id="errorCountry"></span><br>
+                    </div>
+                    <div class="champ">
+                        <label for="date">Date de livraison souhaitée:</label>
+                        <input type="date" name="date" id="date">
+                        <span class="error" id="errorDate"></span><br>
+                    </div>
+                    <div class="champ">
+                        <label for="produits">Nombre de produits souhaités :</label>
+                        <input type="nombre" name="produits" id="produits">
+                        <span class="error" id="errorProduct"></span><br>
+                    </div>
+                    <div class="champ">
+                        <label for="carte">Numéro carte de crédit :</label>
+                        <input type="carte" name="carte" id="carte">
+                        <span class="error" id="errorNumber"></span><br>
+                    </div>
+                    <div class="champ">
+                        <label for="subTotal">Prix total sans taxes : </label>
+                        <span name="subTotal" id="subTotal">
+                    </div>
+                    <div class="champ">
+                        <label for="TPS">TPS : </label>
+                        <span name="TPS" id="TPS">
+                    </div>
+                    <div class="champ">
+                        <label for="TVQ">TVQ : </label>
+                        <span name="TVQ" id="TVQ">
+                    </div>
+                    <div class="champ">
+                        <label for="total">Prix Total : </label>
+                        <span name="total" id="total">
+                    </div>
+                    <div id="champ">
+                        <input class="bouton" type="submit" value="Soumettre">
+                    </div><br>
+                    <div id="message" class="message"></div>
+                </form>
+            </fieldset>    
+        </div>
+    </main>
+</body>
+
+</html>
